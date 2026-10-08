@@ -1,0 +1,5 @@
+policy_name,target_dev_budget_percent,target_dev_routed_trials,delta_margin_cutoff,operational_rule,dev_trials_strictly_below_cutoff,dev_trials_at_or_below_cutoff,ties_at_cutoff,actual_dev_usage_percent_with_threshold_rule
+MARGIN_B5,5.0,2500,0.0841239094734191,route_to_b6_if_b0_abs_margin_le_delta,2499,2500,1,5.0
+MARGIN_B10,10.0,5000,0.1346318423748015,route_to_b6_if_b0_abs_margin_le_delta,4999,5000,1,10.0
+MARGIN_B20,20.0,10000,0.1963726282119751,route_to_b6_if_b0_abs_margin_le_delta,9999,10000,1,20.0
+MARGIN_B30,30.0,15000,0.2367909550666809,route_to_b6_if_b0_abs_margin_le_delta,14999,15000,1,30.0

@@ -1,0 +1,62 @@
+{
+  "stage": "03H-3",
+  "status": "FROZEN",
+  "source": "D:\\PYTHON\\REDIMNET_SV_MASTER\\results\\stage03_dev_cal\\stage03g_benefit\\dev_frozen_threshold_benefit_labels.csv",
+  "source_sha256": "af166e30f1f3ae9f76a3cd7fccad8a27157ebff5ef4c9ef2f08c43d423c47d1f",
+  "dev_trials": 50000,
+  "routing_score": "b0_abs_margin = abs(score_b0 - CAL_frozen_tau_b0)",
+  "deployment_rule": "route to ReDimNet-b6 iff b0_abs_margin <= delta",
+  "important": [
+    "These delta values are selected on DEV only.",
+    "They must not be recomputed, re-ranked, or retuned on VoxCeleb1-O.",
+    "Actual b6 usage on an unseen test set is an outcome, not a fixed quota.",
+    "CAL-frozen b0 decision threshold remains unchanged."
+  ],
+  "policies": [
+    {
+      "policy_name": "MARGIN_B5",
+      "target_dev_budget_percent": 5.0,
+      "target_dev_routed_trials": 2500,
+      "delta_margin_cutoff": 0.0841239094734191,
+      "operational_rule": "route_to_b6_if_b0_abs_margin_le_delta",
+      "dev_trials_strictly_below_cutoff": 2499,
+      "dev_trials_at_or_below_cutoff": 2500,
+      "ties_at_cutoff": 1,
+      "actual_dev_usage_percent_with_threshold_rule": 5.0
+    },
+    {
+      "policy_name": "MARGIN_B10",
+      "target_dev_budget_percent": 10.0,
+      "target_dev_routed_trials": 5000,
+      "delta_margin_cutoff": 0.1346318423748015,
+      "operational_rule": "route_to_b6_if_b0_abs_margin_le_delta",
+      "dev_trials_strictly_below_cutoff": 4999,
+      "dev_trials_at_or_below_cutoff": 5000,
+      "ties_at_cutoff": 1,
+      "actual_dev_usage_percent_with_threshold_rule": 10.0
+    },
+    {
+      "policy_name": "MARGIN_B20",
+      "target_dev_budget_percent": 20.0,
+      "target_dev_routed_trials": 10000,
+      "delta_margin_cutoff": 0.1963726282119751,
+      "operational_rule": "route_to_b6_if_b0_abs_margin_le_delta",
+      "dev_trials_strictly_below_cutoff": 9999,
+      "dev_trials_at_or_below_cutoff": 10000,
+      "ties_at_cutoff": 1,
+      "actual_dev_usage_percent_with_threshold_rule": 20.0
+    },
+    {
+      "policy_name": "MARGIN_B30",
+      "target_dev_budget_percent": 30.0,
+      "target_dev_routed_trials": 15000,
+      "delta_margin_cutoff": 0.2367909550666809,
+      "operational_rule": "route_to_b6_if_b0_abs_margin_le_delta",
+      "dev_trials_strictly_below_cutoff": 14999,
+      "dev_trials_at_or_below_cutoff": 15000,
+      "ties_at_cutoff": 1,
+      "actual_dev_usage_percent_with_threshold_rule": 30.0
+    }
+  ],
+  "policy_csv_sha256": "c2475f1f2780cdfbbb15c2cc225030278e39af3da1e640df4eccd0d41e08e8f8"
+}

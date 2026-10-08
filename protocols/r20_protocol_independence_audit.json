@@ -1,0 +1,55 @@
+{
+  "stage": "R20",
+  "status": "PASS",
+  "speaker_partition": {
+    "all": 1211,
+    "dev": 969,
+    "cal": 242,
+    "dev_cal_overlap": 0,
+    "vox1o_overlap": 0
+  },
+  "audio_partition": {
+    "dev_unique_audio": 62321,
+    "cal_unique_audio": 20556,
+    "dev_cal_path_overlap": 0
+  },
+  "trials": {
+    "dev": {
+      "trials": 50000,
+      "target": 25000,
+      "impostor": 25000,
+      "unique_unordered_pairs": 50000,
+      "identical_path_pairs": 0,
+      "target_cross_session": 25000
+    },
+    "cal": {
+      "trials": 20000,
+      "target": 10000,
+      "impostor": 10000,
+      "unique_unordered_pairs": 20000,
+      "identical_path_pairs": 0,
+      "target_cross_session": 10000
+    },
+    "dev_cal_speaker_overlap": 0,
+    "dev_cal_audio_overlap": 0
+  },
+  "artifact_hashes": {
+    "current_csv_byte_sha256": {
+      "speaker_manifest": "fac7c868a7598f8d23609d5190bbe5e0a419799a8b443b3cdae5e697598b65c6",
+      "dev_trials": "43eacfdc8db21a14791d99bc2a475955851c9a3fe0c69dc94234ab97c904cd40",
+      "cal_trials": "aba53846e0be4b1d52a6d60bc6c46319dc8f3f8ae96353b52a689b983916cd7b"
+    },
+    "historically_recorded_protocol_sha256": {
+      "speaker_manifest": "9bd09e143d3765395d0b066d008a31ccf470cc59b464974d7ba676dfa6856415",
+      "dev_trials": "81a2a69d4bd73054dde07b959f8f43c0329aa8e79cabb88a2ba35254db182925",
+      "cal_trials": "3d7d5f4cc23f25d5e21f618a7b796cbaeb963db52c114cef27d508b9e7eea7ce"
+    }
+  },
+  "paired_scores": {
+    "dev_rows": 50000,
+    "cal_rows": 20000,
+    "dev_sha256": "e17e0b5eef8ccad985041cc7280fb7f5589a3a63bcc31945a6bb99c2a191fb1e",
+    "cal_sha256": "d48855e7c95a58a52c79d315afac5332fb30d9484fdbffdfa73783343c246cdf"
+  },
+  "protocol_statement": "VoxCeleb development speakers were deterministically partitioned into speaker-disjoint DEV and CAL subsets. DEV and CAL contain no shared speakers or audio paths, and the development pool contains no speaker overlap with the VoxCeleb1-O evaluation speaker set. Target trials use same-speaker different-path cross-session pairs; impostor trials use different speakers. Frozen manifests, trials, and paired-score artifacts provide reproducible protocol provenance."
+}

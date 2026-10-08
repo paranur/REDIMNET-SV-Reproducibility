@@ -1,0 +1,127 @@
+{
+  "experiment": "R27-A — Lazy Expert Enrollment Cache",
+  "status": "COMPLETE_PENDING_SCIENTIFIC_LOCK",
+  "protocol": {
+    "initial_enrollment_cache": "b0_only",
+    "initial_b6_cache": "empty",
+    "lazy_b6_enrollment_materialization": "first_routed_use",
+    "first_hit_b6_enrollment_cost": "included_in_online_trial_latency",
+    "subsequent_b6_enrollment_use": "cached",
+    "test_embedding_cache": "disabled",
+    "routing_policy": "frozen_unchanged",
+    "trial_order": "canonical_manifest_order"
+  },
+  "manifest": {
+    "path": "/home/azsa/REDIMNET_SV_MASTER/results/pi5_input/stage09c_pi5_trial_manifest.csv",
+    "sha256": "d4e26be792f1ebcb2bf83719d1ee303399cde0dbb299248b6258b4ad436aa2c0",
+    "trials": 500,
+    "target": 250,
+    "impostor": 250
+  },
+  "frozen_policy": {
+    "tau_b0": 0.336179674,
+    "delta_b10": 0.134631842
+  },
+  "environment": {
+    "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+    "torch": "2.13.0+cu130",
+    "machine": "aarch64",
+    "platform": "Linux-6.18.34+rpt-rpi-2712-aarch64-with-glibc2.41",
+    "cpu_count": 4,
+    "torch_threads": 4,
+    "torch_interop_threads": 1
+  },
+  "checkpoints": {
+    "b0": "/home/azsa/CURE_SR/models/redimnet/b0-vox2-ptn.pt",
+    "b6": "/home/azsa/CURE_SR/models/redimnet/b6-vox2-ptn.pt",
+    "b0_sha256": "7747c59fb22bc0e91f65a29465325fc26bfe889352d795c8099571d479e31b8e",
+    "b6_sha256": "b306026f7f469327d7a316105ab21d8d6ac3135d7eae1f5dd45c8ad656d251b2"
+  },
+  "initial_b0_provisioning": {
+    "unique_enrollment_utterances": 475,
+    "b0_initial_cache_build_time_s": 440.2473132570001,
+    "b0_initial_mean_build_ms_per_utterance": 926.8364489621054,
+    "b0_embedding_tensor_bytes": 364800,
+    "b0_embedding_tensor_mb": 0.347900390625,
+    "rss_before_b0_cache_mb": 803.671875,
+    "rss_after_b0_cache_mb": 845.296875,
+    "rss_delta_b0_cache_mb": 41.625
+  },
+  "lazy_b6_materialization": {
+    "initial_b6_cache_entries": 0,
+    "final_b6_cache_entries": 40,
+    "unique_b6_enrollments_materialized": 40,
+    "expert_enrollment_coverage_percent": 8.421052631578947,
+    "routed_trials": 40,
+    "first_hit_routed_trials": 40,
+    "cached_hit_routed_trials": 0,
+    "lazy_b6_build_total_s": 366.27945799000145,
+    "lazy_b6_build_mean_ms_per_materialized_enrollment": 9156.986449750035,
+    "lazy_b6_build_median_ms": 6114.21326000027,
+    "lazy_b6_build_p95_ms": 18161.47199264993,
+    "lazy_b6_embedding_tensor_bytes": 30720,
+    "lazy_b6_embedding_tensor_mb": 0.029296875,
+    "rss_before_lazy_b6_materialization_mb": 845.296875,
+    "rss_after_lazy_b6_materialization_mb": 869.78125,
+    "rss_delta_lazy_phase_mb": 24.484375
+  },
+  "verification_and_latency": {
+    "eer_percent": 0.8000000000000004,
+    "eer_threshold": 0.42267775535583496,
+    "min_dcf": 0.03200000000000003,
+    "min_dcf_threshold": 0.4834357500076294,
+    "auc": 0.999696,
+    "mean_latency_ms": 2441.7671141699952,
+    "median_latency_ms": 693.4018824999839,
+    "p95_latency_ms": 15994.638211049913,
+    "p99_latency_ms": 28621.67831878011,
+    "min_latency_ms": 317.40946199988684,
+    "max_latency_ms": 46313.74762999985,
+    "mean_test_rtf": 0.30568240725199863,
+    "max_rss_mb": 933.859375,
+    "routed_count": 40,
+    "b6_usage_percent": 8.0,
+    "mean_route_overhead_ms": 0.004816530003154185,
+    "p95_route_overhead_ms": 0.005481950233843235
+  },
+  "latency_groups": {
+    "non_routed": {
+      "count": 460,
+      "mean_latency_ms": 981.1157795760822,
+      "median_latency_ms": 651.9611344999703,
+      "p95_latency_ms": 2736.385058749874,
+      "p99_latency_ms": 4953.958605010021
+    },
+    "routed_all": {
+      "count": 40,
+      "mean_latency_ms": 19239.257461999987,
+      "median_latency_ms": 16638.440267499846,
+      "p95_latency_ms": 36943.8685747498,
+      "p99_latency_ms": 46156.065516319955
+    },
+    "routed_first_hit": {
+      "count": 40,
+      "mean_latency_ms": 19239.257461999987,
+      "median_latency_ms": 16638.440267499846,
+      "p95_latency_ms": 36943.8685747498,
+      "p99_latency_ms": 46156.065516319955
+    },
+    "routed_cached_hit": {
+      "count": 0,
+      "mean_latency_ms": null,
+      "median_latency_ms": null,
+      "p95_latency_ms": null,
+      "p99_latency_ms": null
+    }
+  },
+  "r7a_score_integrity": {
+    "reference": "/home/azsa/REDIMNET_SV_MASTER/results/reviewer_audit/r7a_cached_enrollment_pi5_benchmark/r7a_frozen_b10_trials.csv",
+    "tolerance": 1e-06,
+    "max_abs_b0_score_difference": 0.0,
+    "max_abs_final_score_difference": 0.0,
+    "routing_mismatches": 0,
+    "label_mismatches": 0,
+    "path_mismatches": 0,
+    "pass": true
+  }
+}

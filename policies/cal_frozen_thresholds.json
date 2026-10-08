@@ -1,0 +1,43 @@
+{
+  "stage": "03G-1",
+  "source_split": "CAL",
+  "source_trials": 20000,
+  "primary_policy": "CAL-derived EER threshold",
+  "secondary_policy": "CAL-derived minDCF threshold",
+  "minDCF_config": {
+    "P_target": 0.01,
+    "C_miss": 1.0,
+    "C_fa": 1.0
+  },
+  "models": {
+    "b0": {
+      "frozen_primary_EER": {
+        "eer_percent": 1.900000000000001,
+        "threshold": 0.3361796736717224,
+        "far": 0.019,
+        "frr": 0.019000000000000017
+      },
+      "secondary_minDCF": {
+        "minDCF": 0.14929999999999996,
+        "threshold": 0.5029078125953674,
+        "far": 0.0002,
+        "frr": 0.12949999999999995
+      }
+    },
+    "b6": {
+      "frozen_primary_EER": {
+        "eer_percent": 1.0499999999999978,
+        "threshold": 0.3403647541999817,
+        "far": 0.0105,
+        "frr": 0.010499999999999954
+      },
+      "secondary_minDCF": {
+        "minDCF": 0.05210000000000002,
+        "threshold": 0.4823684096336365,
+        "far": 0.0001,
+        "frr": 0.042200000000000015
+      }
+    }
+  },
+  "lock": "Primary b0/b6 verification decision thresholds are frozen from CAL only. They may be applied to DEV for benefit/complementarity analysis and to VoxCeleb1-O for final fixed-policy evaluation, but must not be retuned using DEV or VoxCeleb1-O outcomes."
+}

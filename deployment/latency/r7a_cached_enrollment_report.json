@@ -1,0 +1,152 @@
+{
+  "experiment": "R7-A — Cached-Enrollment Raspberry Pi 5 Benchmark",
+  "protocol": {
+    "enrollment_embeddings": "precomputed_and_cached_before_timing",
+    "cached_models": [
+      "ReDimNet-b0",
+      "ReDimNet-b6"
+    ],
+    "test_audio_io": "timed",
+    "test_preprocessing": "timed",
+    "test_embedding_inference": "timed",
+    "cosine_scoring": "timed",
+    "routing": "timed",
+    "expert_test_inference_if_routed": "timed",
+    "cross_trial_test_embedding_cache": "DISABLED",
+    "rtf_definition": "latency_seconds / test_duration_seconds"
+  },
+  "config": {
+    "redimnet_source": "/home/azsa/CURE_SR/models/redimnet/ReDimNet",
+    "b0_checkpoint": "/home/azsa/CURE_SR/models/redimnet/b0-vox2-ptn.pt",
+    "b6_checkpoint": "/home/azsa/CURE_SR/models/redimnet/b6-vox2-ptn.pt",
+    "project_root": "/home/azsa/REDIMNET_SV_MASTER",
+    "explicit_manifest": null,
+    "output_dir": "/home/azsa/REDIMNET_SV_MASTER/results/reviewer_audit/r7a_cached_enrollment_pi5_benchmark",
+    "sample_rate": 16000,
+    "tau_b0": 0.336179674,
+    "delta_b10": 0.134631842,
+    "expected_trials": 500,
+    "expected_target": 250,
+    "expected_impostor": 250,
+    "expected_manifest_sha256": "d4e26be792f1ebcb2bf83719d1ee303399cde0dbb299248b6258b4ad436aa2c0",
+    "torch_threads": 4,
+    "torch_interop_threads": 1,
+    "warmup_files_per_model": 5
+  },
+  "environment": {
+    "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+    "torch": "2.13.0+cu130",
+    "machine": "aarch64",
+    "platform": "Linux-6.18.34+rpt-rpi-2712-aarch64-with-glibc2.41",
+    "cpu_count": 4,
+    "torch_threads": 4,
+    "torch_interop_threads": 1
+  },
+  "manifest": {
+    "path": "/home/azsa/REDIMNET_SV_MASTER/results/pi5_input/stage09c_pi5_trial_manifest.csv",
+    "sha256": "d4e26be792f1ebcb2bf83719d1ee303399cde0dbb299248b6258b4ad436aa2c0",
+    "trials": 500,
+    "target": 250,
+    "impostor": 250
+  },
+  "checkpoints": {
+    "b0_sha256": "7747c59fb22bc0e91f65a29465325fc26bfe889352d795c8099571d479e31b8e",
+    "b6_sha256": "b306026f7f469327d7a316105ab21d8d6ac3135d7eae1f5dd45c8ad656d251b2",
+    "b0_params": 1004251,
+    "b6_params": 15015473
+  },
+  "enrollment_cache": {
+    "unique_enrollment_utterances": 475,
+    "cache_build_time_s": 4701.080778016,
+    "embedding_tensor_bytes": 729600,
+    "embedding_tensor_mb": 0.69580078125,
+    "rss_before_cache_mb": 757.171875,
+    "rss_after_cache_mb": 814.109375,
+    "rss_delta_cache_mb": 56.9375
+  },
+  "results": {
+    "STATIC_B0": {
+      "eer_percent": 1.6000000000000008,
+      "eer_threshold": 0.389739990234375,
+      "min_dcf": 0.06799999999999995,
+      "min_dcf_threshold": 0.4834357500076294,
+      "auc": 0.9988319999999999,
+      "mean_latency_ms": 978.1039184739948,
+      "median_latency_ms": 645.3780345000268,
+      "p95_latency_ms": 2712.8661219998776,
+      "p99_latency_ms": 4921.684519579812,
+      "min_latency_ms": 321.33386800069275,
+      "max_latency_ms": 8348.145473999466,
+      "mean_test_rtf": 0.10227236689874164,
+      "max_rss_mb": 975.25
+    },
+    "STATIC_B6": {
+      "eer_percent": 0.4000000000000002,
+      "eer_threshold": 0.3772595226764679,
+      "min_dcf": 0.008000000000000007,
+      "min_dcf_threshold": 0.42267775535583496,
+      "auc": 0.999952,
+      "mean_latency_ms": 9449.662038124017,
+      "median_latency_ms": 6949.887783000122,
+      "p95_latency_ms": 22999.105467700247,
+      "p99_latency_ms": 36414.697008019,
+      "min_latency_ms": 4036.180355999022,
+      "max_latency_ms": 60626.13980700007,
+      "mean_test_rtf": 1.064023391208274,
+      "max_rss_mb": 995.6875
+    },
+    "SEQUENTIAL_ALL": {
+      "eer_percent": 0.4000000000000002,
+      "eer_threshold": 0.3772595226764679,
+      "min_dcf": 0.008000000000000007,
+      "min_dcf_threshold": 0.42267775535583496,
+      "auc": 0.999952,
+      "mean_latency_ms": 10413.235214082013,
+      "median_latency_ms": 7604.517071500595,
+      "p95_latency_ms": 25683.568841700162,
+      "p99_latency_ms": 41298.387007270336,
+      "min_latency_ms": 4357.914973999868,
+      "max_latency_ms": 68690.81040200035,
+      "mean_test_rtf": 1.1647166918149212,
+      "max_rss_mb": 994.8125
+    },
+    "FROZEN_B10": {
+      "eer_percent": 0.8000000000000004,
+      "eer_threshold": 0.42267775535583496,
+      "min_dcf": 0.03200000000000003,
+      "min_dcf_threshold": 0.4834357500076294,
+      "auc": 0.999696,
+      "mean_latency_ms": 1716.1578569619742,
+      "median_latency_ms": 685.3986740006803,
+      "p95_latency_ms": 6526.426685650034,
+      "p99_latency_ms": 12213.954598299877,
+      "min_latency_ms": 319.22530999872833,
+      "max_latency_ms": 41831.43253999879,
+      "mean_test_rtf": 0.18682903832672476,
+      "routed_count": 40,
+      "b6_usage_percent": 8.0,
+      "mean_route_overhead_ms": 0.004118554039450828,
+      "p95_route_overhead_ms": 0.004926951623929198,
+      "max_rss_mb": 940.265625
+    }
+  },
+  "direct_measured_savings": {
+    "b10_vs_sequential_all_percent": 83.51945556131123,
+    "b10_vs_static_b6_percent": 81.83894990066044
+  },
+  "score_integrity": {
+    "tolerance": 1e-06,
+    "max_abs_b0_static_vs_seq": 0.0,
+    "max_abs_b0_static_vs_b10": 0.0,
+    "max_abs_b6_static_vs_seq": 0.0,
+    "pass": true
+  },
+  "historical_reference_only_not_gate": {
+    "stage10a_b10_usage_percent": 8.0,
+    "stage10a_b10_eer_percent": 0.8,
+    "stage10a_uncached_b10_mean_latency_ms": 3369.37,
+    "stage10a_uncached_seq_all_mean_latency_ms": 20132.68,
+    "stage10a_uncached_static_b6_mean_latency_ms": 18235.99,
+    "note": "Historical Stage10A values are reference only. Latency must not be compared as if timing boundaries were identical."
+  }
+}

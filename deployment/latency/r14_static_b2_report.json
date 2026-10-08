@@ -1,0 +1,53 @@
+{
+  "experiment": "R14 \u2014 Pi5 Static-b2 Cached-Enrollment Benchmark",
+  "manifest": {
+    "path": "/home/azsa/REDIMNET_SV_MASTER/results/pi5_input/stage09c_pi5_trial_manifest.csv",
+    "sha256": "d4e26be792f1ebcb2bf83719d1ee303399cde0dbb299248b6258b4ad436aa2c0",
+    "trials": 500,
+    "target": 250,
+    "impostor": 250
+  },
+  "checkpoint": {
+    "path": "/home/azsa/CURE_SR/models/redimnet/b2-vox2-ptn.pt",
+    "sha256": "c18a42926878bc8ac079623fbf36f0bc8054cda1199e96fbe1a3f8e131796647",
+    "parameters": 5067057
+  },
+  "protocol": {
+    "enrollment_embeddings": "precomputed_before_timing",
+    "test_audio_io": "timed",
+    "test_preprocessing": "timed",
+    "test_inference": "timed",
+    "cosine_scoring": "timed",
+    "cross_trial_test_embedding_cache": "disabled"
+  },
+  "environment": {
+    "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+    "torch": "2.13.0+cu130",
+    "machine": "aarch64",
+    "platform": "Linux-6.18.34+rpt-rpi-2712-aarch64-with-glibc2.41",
+    "cpu_count": 4,
+    "torch_threads": 4,
+    "interop_threads": 1
+  },
+  "enrollment_cache": {
+    "unique_enrollment_utterances": 475,
+    "cache_build_time_s": 455.532479339,
+    "rss_before_cache_mb": 722.703125,
+    "rss_after_cache_mb": 733.859375
+  },
+  "results": {
+    "eer_percent": 0.8000000000000004,
+    "eer_threshold": 0.43298107385635376,
+    "min_dcf": 0.020000000000000018,
+    "min_dcf_threshold": 0.46218591928482056,
+    "auc": 0.99984,
+    "mean_latency_ms": 1004.011793033998,
+    "median_latency_ms": 704.3798314999776,
+    "p95_latency_ms": 2589.0112038500206,
+    "p99_latency_ms": 4866.540820850073,
+    "min_latency_ms": 385.72831600004065,
+    "max_latency_ms": 8175.00635600004,
+    "mean_test_rtf": 0.10963512410581441,
+    "max_rss_mb": 847.0
+  }
+}

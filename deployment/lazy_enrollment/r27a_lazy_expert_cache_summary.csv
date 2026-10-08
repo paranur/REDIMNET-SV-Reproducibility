@@ -1,0 +1,2 @@
+trials,routed_trials,b6_usage_percent,initial_b0_cache_build_s,lazy_b6_unique_enrollments,expert_enrollment_coverage_percent,lazy_b6_build_total_s,eer_percent,min_dcf,auc,mean_latency_ms,median_latency_ms,p95_latency_ms,p99_latency_ms,score_integrity_pass
+500,40,8.0,440.2473132570001,40,8.421052631578947,366.27945799000145,0.8000000000000004,0.03200000000000003,0.999696,2441.7671141699952,693.4018824999839,15994.638211049913,28621.67831878011,1

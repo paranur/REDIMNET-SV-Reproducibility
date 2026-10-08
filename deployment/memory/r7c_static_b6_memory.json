@@ -1,0 +1,21 @@
+{
+  "pipeline": "STATIC_B6",
+  "cache_ready_rss_mb": 789.78125,
+  "peak_rss_mb": 996.515625,
+  "routed_count": 500,
+  "b6_usage_percent": 100.0,
+  "pid": 2613,
+  "python": "3.13.5",
+  "torch": "2.13.0+cu130",
+  "machine": "aarch64",
+  "platform": "Linux-6.18.34+rpt-rpi-2712-aarch64-with-glibc2.41",
+  "manifest": "/home/azsa/REDIMNET_SV_MASTER/results/pi5_input/stage09c_pi5_trial_manifest.csv",
+  "manifest_sha256": "d4e26be792f1ebcb2bf83719d1ee303399cde0dbb299248b6258b4ad436aa2c0",
+  "trials": 500,
+  "target": 250,
+  "impostor": 250,
+  "initial_rss_mb": 611.96875,
+  "incremental_peak_above_initial_mb": 384.546875,
+  "measurement": "fresh-process RSS",
+  "enrollment_protocol": "cached"
+}

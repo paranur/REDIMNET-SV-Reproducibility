@@ -1,0 +1,100 @@
+{
+  "protocol": "USC-SV v1.0",
+  "seed": 42,
+  "n_query_per_speaker": 10,
+  "n_impostors_per_query": 10,
+  "primary": "1E",
+  "secondary": "3E centroid",
+  "splits": {
+    "cal": {
+      "n_speakers": 40,
+      "source_manifest": "D:\\PYTHON\\KAA_SSL_SV\\PROTOCOLS\\USC_SV_v1\\usc_sv_v1_cal.csv",
+      "source_manifest_sha256": "62313e0c1950fe41dd7a8aa2ee8b2baae2862df787a4d0c92f214018362fdff2",
+      "protocols": {
+        "1E": {
+          "target_trials": 400,
+          "impostor_trials": 4000,
+          "total_trials": 4400,
+          "sha256": "a4b71475746d26b5caed278f0ca1504719490dc6c17ad834b33eeedf8e00d378",
+          "audit": {
+            "unique_trials": 4400,
+            "target_per_query_speaker": 10,
+            "impostor_per_query_speaker": 100
+          }
+        },
+        "3E": {
+          "target_trials": 400,
+          "impostor_trials": 4000,
+          "total_trials": 4400,
+          "sha256": "333981bd76d6618a6d082895631c1662c122dd5ac88a7324c4b91bf69ca8b494",
+          "audit": {
+            "unique_trials": 4400,
+            "target_per_query_speaker": 10,
+            "impostor_per_query_speaker": 100
+          }
+        }
+      },
+      "selected_utterances_sha256": "937a59f67f27d7114456bb6e0e53cab18102a1689b6299c80b8e98a44416aa83"
+    },
+    "dev": {
+      "n_speakers": 40,
+      "source_manifest": "D:\\PYTHON\\KAA_SSL_SV\\PROTOCOLS\\USC_SV_v1\\usc_sv_v1_dev.csv",
+      "source_manifest_sha256": "17ca66964c640ba2f6ad8d3b314ea01a5774788632533a6c0b63a63b01a6f118",
+      "protocols": {
+        "1E": {
+          "target_trials": 400,
+          "impostor_trials": 4000,
+          "total_trials": 4400,
+          "sha256": "c0ed4f3d50346ef99f4bff2299087ea48e13db1b7fe3d6074cf1b1f1dc064908",
+          "audit": {
+            "unique_trials": 4400,
+            "target_per_query_speaker": 10,
+            "impostor_per_query_speaker": 100
+          }
+        },
+        "3E": {
+          "target_trials": 400,
+          "impostor_trials": 4000,
+          "total_trials": 4400,
+          "sha256": "d1d17b516e8c8c8420c47dc0ec09e2142513ea852e14b7d3f1cb09b6b6ef7db7",
+          "audit": {
+            "unique_trials": 4400,
+            "target_per_query_speaker": 10,
+            "impostor_per_query_speaker": 100
+          }
+        }
+      },
+      "selected_utterances_sha256": "4b5359f6d13bd4c8083ea3456400edbe10c6d3d0e09f1bf6ceb06018b75d0d2f"
+    },
+    "test": {
+      "n_speakers": 49,
+      "source_manifest": "D:\\PYTHON\\KAA_SSL_SV\\PROTOCOLS\\USC_SV_v1\\usc_sv_v1_test.csv",
+      "source_manifest_sha256": "54d15f97d4e4c466798f5bca401b1b39c4eed267b1bbed471b65325d7ba7afc6",
+      "protocols": {
+        "1E": {
+          "target_trials": 490,
+          "impostor_trials": 4900,
+          "total_trials": 5390,
+          "sha256": "e13723dd0914a088d1244f237f5e4259f2338c16635dd23f5aaaf356301d0adb",
+          "audit": {
+            "unique_trials": 5390,
+            "target_per_query_speaker": 10,
+            "impostor_per_query_speaker": 100
+          }
+        },
+        "3E": {
+          "target_trials": 490,
+          "impostor_trials": 4900,
+          "total_trials": 5390,
+          "sha256": "322bbefd7a75ea9fc2dcba077537fb67def9e29ad35c15f233e629c320255246",
+          "audit": {
+            "unique_trials": 5390,
+            "target_per_query_speaker": 10,
+            "impostor_per_query_speaker": 100
+          }
+        }
+      },
+      "selected_utterances_sha256": "bb707f48affd2475d4bab0ec70c85df82260af1541ada9d048eeb27306773f26"
+    }
+  }
+}

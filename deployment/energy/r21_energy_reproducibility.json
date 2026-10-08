@@ -1,0 +1,141 @@
+{
+  "stage": "R21",
+  "status": "PASS",
+  "raw_artifacts": {
+    "r9_csv": "/home/azsa/REDIMNET_SV_MASTER/results/reviewer_audit/r9_at085_energy_benchmark/r9_at085_energy_summary.csv",
+    "r9_sha256": "c0f4e3323599425b5c4237d597c24e4f06a0b51e68ed20cbf496ab3adbe16e38",
+    "r14c_csv": "/home/azsa/REDIMNET_SV_MASTER/results/reviewer_audit/r14c_pi5_b2_at085_energy/r14c_b2_energy_summary.csv",
+    "r14c_sha256": "9e671652e475982339a87775e5dd62b3214dd9443179d89562f01fb6376c0ece"
+  },
+  "invalid_measurements": [
+    {
+      "source_stage": "R9",
+      "pipeline": "STATIC_B0",
+      "run_number": 2,
+      "replacement_run": 4,
+      "reason": "INVALID_PROTOCOL: cumulative end-energy reading was not recorded at the prescribed end-of-run boundary; run 4 was performed as the replacement repetition."
+    }
+  ],
+  "valid_run_policy": {
+    "R9": {
+      "STATIC_B0": [
+        1,
+        3,
+        4
+      ],
+      "STATIC_B6": [
+        1,
+        2,
+        3
+      ],
+      "SEQUENTIAL_ALL": [
+        1,
+        2,
+        3
+      ],
+      "FROZEN_B10": [
+        1,
+        2,
+        3
+      ]
+    },
+    "R14-C": {
+      "STATIC_B2": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "valid_only_summary": {
+    "R9:STATIC_B0": {
+      "n_valid": 3,
+      "energy_j_per_trial_mean": 5.616000000000009,
+      "energy_j_per_trial_sd": 1.0877919644084146e-15,
+      "wall_seconds_mean": 488.08137318566577,
+      "wall_seconds_sd": 1.3446859741426653,
+      "average_power_w_mean": 5.75316810430792,
+      "average_power_w_sd": 0.015827325412292398,
+      "mean_latency_ms_mean": 975.9224269880427,
+      "mean_latency_ms_sd": 2.6766701329621547,
+      "temp_start_min_c": 47.4,
+      "temp_start_max_c": 48.5,
+      "temp_end_min_c": 65.55,
+      "temp_end_max_c": 65.55
+    },
+    "R14-C:STATIC_B2": {
+      "n_valid": 3,
+      "energy_j_per_trial_mean": 5.75999999999998,
+      "energy_j_per_trial_sd": 0.0,
+      "wall_seconds_mean": 432.17054372666706,
+      "wall_seconds_sd": 2.0257938401987907,
+      "average_power_w_mean": 6.664133217180006,
+      "average_power_w_sd": 0.03115515011581881,
+      "mean_latency_ms_mean": 864.3185805393235,
+      "mean_latency_ms_sd": 4.044797930250649,
+      "temp_start_min_c": 46.3,
+      "temp_start_max_c": 66.65,
+      "temp_end_min_c": 67.2,
+      "temp_end_max_c": 67.75
+    },
+    "R9:STATIC_B6": {
+      "n_valid": 3,
+      "energy_j_per_trial_mean": 62.68799999999999,
+      "energy_j_per_trial_sd": 0.2909845356715619,
+      "wall_seconds_mean": 4724.009654499335,
+      "wall_seconds_sd": 13.964051119048863,
+      "average_power_w_mean": 6.635138246607192,
+      "average_power_w_sd": 0.049852347005405834,
+      "mean_latency_ms_mean": 9447.788985034009,
+      "mean_latency_ms_sd": 27.934481283541576,
+      "temp_start_min_c": 43.0,
+      "temp_start_max_c": 47.95,
+      "temp_end_min_c": 69.4,
+      "temp_end_max_c": 70.5
+    },
+    "R9:SEQUENTIAL_ALL": {
+      "n_valid": 3,
+      "energy_j_per_trial_mean": 68.32800000000002,
+      "energy_j_per_trial_sd": 0.07200000000000273,
+      "wall_seconds_mean": 5211.066809242667,
+      "wall_seconds_sd": 13.954112758995334,
+      "average_power_w_mean": 6.556089085736557,
+      "average_power_w_sd": 0.02372341114776384,
+      "mean_latency_ms_mean": 10421.907112845322,
+      "mean_latency_ms_sd": 27.90935685797262,
+      "temp_start_min_c": 47.95,
+      "temp_start_max_c": 52.35,
+      "temp_end_min_c": 69.4,
+      "temp_end_max_c": 69.95
+    },
+    "R9:FROZEN_B10": {
+      "n_valid": 3,
+      "energy_j_per_trial_mean": 10.607999999999986,
+      "energy_j_per_trial_sd": 0.041569219381643346,
+      "wall_seconds_mean": 858.8852497883345,
+      "wall_seconds_sd": 0.30434978165904336,
+      "average_power_w_mean": 6.175449908471093,
+      "average_power_w_sd": 0.025340333014895477,
+      "mean_latency_ms_mean": 1717.5377497059405,
+      "mean_latency_ms_sd": 0.6046657383626067,
+      "temp_start_min_c": 46.3,
+      "temp_start_max_c": 47.95,
+      "temp_end_min_c": 66.1,
+      "temp_end_max_c": 66.65
+    }
+  },
+  "b10_energy_savings_percent": {
+    "vs_static_b6": 83.07810107197551,
+    "vs_sequential_all": 84.47488584474888
+  },
+  "measurement_notes": {
+    "meter": "AT085 Type-C Tester",
+    "measurement_location": "Raspberry Pi 5 power input",
+    "energy_definition": "Difference between cumulative Wh readings at the beginning and end of the timed 500-trial benchmark interval.",
+    "r9_recorded_wh_decimal_places": 2,
+    "r14c_recorded_wh_decimal_places": 1,
+    "hardware_accuracy_or_resolution": "Not inferred from CSV decimal precision.",
+    "throttling_status": "Not present in preserved energy CSV artifacts.",
+    "static_b0_run2": "Protocol-invalid measurement. End cumulative energy was not recorded at the prescribed benchmark boundary. Run 4 was deliberately performed as its replacement."
+  }
+}
