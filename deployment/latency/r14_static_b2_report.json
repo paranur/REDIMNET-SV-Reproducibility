@@ -1,14 +1,14 @@
 {
   "experiment": "R14 \u2014 Pi5 Static-b2 Cached-Enrollment Benchmark",
   "manifest": {
-    "path": "/home/azsa/REDIMNET_SV_MASTER/results/pi5_input/stage09c_pi5_trial_manifest.csv",
+    "path": "external/stage09c_pi5_trial_manifest.csv",
     "sha256": "d4e26be792f1ebcb2bf83719d1ee303399cde0dbb299248b6258b4ad436aa2c0",
     "trials": 500,
     "target": 250,
     "impostor": 250
   },
   "checkpoint": {
-    "path": "/home/azsa/CURE_SR/models/redimnet/b2-vox2-ptn.pt",
+    "path": "external/b2-vox2-ptn.pt",
     "sha256": "c18a42926878bc8ac079623fbf36f0bc8054cda1199e96fbe1a3f8e131796647",
     "parameters": 5067057
   },

@@ -16,12 +16,12 @@
     "rtf_definition": "latency_seconds / test_duration_seconds"
   },
   "config": {
-    "redimnet_source": "/home/azsa/CURE_SR/models/redimnet/ReDimNet",
-    "b0_checkpoint": "/home/azsa/CURE_SR/models/redimnet/b0-vox2-ptn.pt",
-    "b6_checkpoint": "/home/azsa/CURE_SR/models/redimnet/b6-vox2-ptn.pt",
-    "project_root": "/home/azsa/REDIMNET_SV_MASTER",
+    "redimnet_source": "external/ReDimNet",
+    "b0_checkpoint": "external/b0-vox2-ptn.pt",
+    "b6_checkpoint": "external/b6-vox2-ptn.pt",
+    "project_root": "external/REDIMNET_SV_MASTER",
     "explicit_manifest": null,
-    "output_dir": "/home/azsa/REDIMNET_SV_MASTER/results/reviewer_audit/r7a_cached_enrollment_pi5_benchmark",
+    "output_dir": "external/r7a_cached_enrollment_pi5_benchmark",
     "sample_rate": 16000,
     "tau_b0": 0.336179674,
     "delta_b10": 0.134631842,
@@ -43,7 +43,7 @@
     "torch_interop_threads": 1
   },
   "manifest": {
-    "path": "/home/azsa/REDIMNET_SV_MASTER/results/pi5_input/stage09c_pi5_trial_manifest.csv",
+    "path": "external/stage09c_pi5_trial_manifest.csv",
     "sha256": "d4e26be792f1ebcb2bf83719d1ee303399cde0dbb299248b6258b4ad436aa2c0",
     "trials": 500,
     "target": 250,

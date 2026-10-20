@@ -12,7 +12,7 @@
     "trial_order": "canonical_manifest_order"
   },
   "manifest": {
-    "path": "/home/azsa/REDIMNET_SV_MASTER/results/pi5_input/stage09c_pi5_trial_manifest.csv",
+    "path": "external/stage09c_pi5_trial_manifest.csv",
     "sha256": "d4e26be792f1ebcb2bf83719d1ee303399cde0dbb299248b6258b4ad436aa2c0",
     "trials": 500,
     "target": 250,
@@ -32,8 +32,8 @@
     "torch_interop_threads": 1
   },
   "checkpoints": {
-    "b0": "/home/azsa/CURE_SR/models/redimnet/b0-vox2-ptn.pt",
-    "b6": "/home/azsa/CURE_SR/models/redimnet/b6-vox2-ptn.pt",
+    "b0": "external/b0-vox2-ptn.pt",
+    "b6": "external/b6-vox2-ptn.pt",
     "b0_sha256": "7747c59fb22bc0e91f65a29465325fc26bfe889352d795c8099571d479e31b8e",
     "b6_sha256": "b306026f7f469327d7a316105ab21d8d6ac3135d7eae1f5dd45c8ad656d251b2"
   },
@@ -115,7 +115,7 @@
     }
   },
   "r7a_score_integrity": {
-    "reference": "/home/azsa/REDIMNET_SV_MASTER/results/reviewer_audit/r7a_cached_enrollment_pi5_benchmark/r7a_frozen_b10_trials.csv",
+    "reference": "external/r7a_frozen_b10_trials.csv",
     "tolerance": 1e-06,
     "max_abs_b0_score_difference": 0.0,
     "max_abs_final_score_difference": 0.0,

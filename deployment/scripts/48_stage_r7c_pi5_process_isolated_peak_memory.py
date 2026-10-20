@@ -88,7 +88,7 @@ def sha256_file(path: Path) -> str:
 def load_r7a_module():
     if not CFG.r7a_script.exists():
         raise FileNotFoundError(
-            f"R7-A script missing:\n{CFG.r7a_script}"
+            f"R7-A script missinexternal/n{CFG.r7a_script}"
         )
 
     spec = importlib.util.spec_from_file_location(
@@ -977,7 +977,7 @@ def parent_main():
 
         if not result_path.exists():
             raise RuntimeError(
-                f"Missing child artifact:\n"
+                f"Missing child artifacexternal/n"
                 f"{result_path}"
             )
 

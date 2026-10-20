@@ -116,7 +116,7 @@ def cache_tensor_bytes(cache):
 def load_r7a_reference():
     if not R7A_REFERENCE.exists():
         raise FileNotFoundError(
-            f"R7-A reference missing:\n{R7A_REFERENCE}"
+            f"R7-A reference missinexternal/n{R7A_REFERENCE}"
         )
 
     with R7A_REFERENCE.open(

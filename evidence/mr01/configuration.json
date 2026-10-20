@@ -1,0 +1,20 @@
+{
+  "n_trials": 37720,
+  "decisions": "score >= respective frozen CAL threshold",
+  "potential_benefit": "b0 incorrect AND b6 correct on ALL trials",
+  "potential_harm": "b0 correct AND b6 incorrect on ALL trials",
+  "ranking": "negative stored b0 absolute margin",
+  "primary_pr_auc": "grouped average precision",
+  "regions": [
+    5,
+    10,
+    20,
+    30
+  ],
+  "region_ties": "stored margin then trial_id",
+  "threshold_sources": [
+    "policies/cal_frozen_thresholds.json",
+    "policies/r2b_cal_frozen_decision_thresholds.json"
+  ],
+  "route_source": "scores/vox1o_frozen_margin_router_trial_audit.csv"
+}

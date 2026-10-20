@@ -1,0 +1,2 @@
+n_trials,potential_benefit,potential_harm,compact_errors,benefit_prevalence,benefit_roc_auc,benefit_pr_auc_average_precision,benefit_pr_auc_trapezoidal,ap_lift_over_prevalence
+37720,396,100,683,0.010498409331919405,0.9799983816294288,0.29831855727109813,0.2963892849571381,28.415595909762178

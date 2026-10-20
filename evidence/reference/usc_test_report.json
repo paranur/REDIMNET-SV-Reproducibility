@@ -1,0 +1,124 @@
+{
+  "stage": "R19-E",
+  "status": "PASS",
+  "protocol": {
+    "dataset": "USC-SV v1.0",
+    "split": "TEST",
+    "enrollment_mode": "1E",
+    "trials": 5390,
+    "target": 490,
+    "impostor": 4900,
+    "input_sha256": "8c4a1bb41c23d7426bb78fa52b1cef0b1911ce6aef3ede973e588d12dea59d35"
+  },
+  "frozen_routing": {
+    "tau_b0": 0.336179673672,
+    "delta_B10": 0.134631842,
+    "source": "VoxCeleb DEV/CAL",
+    "usc_retuning": false
+  },
+  "frozen_usc_cal_decision_thresholds": {
+    "b0_eer": 0.3742733597755432,
+    "b0_mindcf": 0.5554097890853882,
+    "b6_eer": 0.4293814897537231,
+    "b6_mindcf": 0.6678771376609802,
+    "b10_eer": 0.4293814897537231,
+    "b10_mindcf": 0.6281929612159729
+  },
+  "threshold_swept_test": {
+    "b0": {
+      "eer_percent": 6.69387755102041,
+      "eer_threshold_test_swept": 0.3570523858070373,
+      "minDCF": 0.7771428571428571,
+      "minDCF_threshold_test_swept": 0.6045222282409668,
+      "roc_auc": 0.9782748854643898
+    },
+    "b6": {
+      "eer_percent": 4.683673469387756,
+      "eer_threshold_test_swept": 0.4112924933433532,
+      "minDCF": 0.8230612244897959,
+      "minDCF_threshold_test_swept": 0.6344566345214844,
+      "roc_auc": 0.9815318617242814
+    },
+    "frozen_b10": {
+      "eer_percent": 4.744897959183674,
+      "eer_threshold_test_swept": 0.4112924933433532,
+      "minDCF": 0.8177551020408163,
+      "minDCF_threshold_test_swept": 0.6193081140518188,
+      "roc_auc": 0.982067055393586
+    }
+  },
+  "cal_frozen_test_operating_points": {
+    "b0_eer": {
+      "threshold": 0.3742733597755432,
+      "FA": 255,
+      "MISS": 42,
+      "FAR_percent": 5.204081632653061,
+      "FRR_percent": 8.571428571428571,
+      "actual_DCF": 5.237755102040816
+    },
+    "b0_mindcf": {
+      "threshold": 0.5554097890853882,
+      "FA": 20,
+      "MISS": 206,
+      "FAR_percent": 0.40816326530612246,
+      "FRR_percent": 42.04081632653061,
+      "actual_DCF": 0.8244897959183675
+    },
+    "b6_eer": {
+      "threshold": 0.4293814897537231,
+      "FA": 176,
+      "MISS": 28,
+      "FAR_percent": 3.5918367346938775,
+      "FRR_percent": 5.714285714285714,
+      "actual_DCF": 3.6130612244897953
+    },
+    "b6_mindcf": {
+      "threshold": 0.6678771376609802,
+      "FA": 15,
+      "MISS": 264,
+      "FAR_percent": 0.30612244897959184,
+      "FRR_percent": 53.87755102040816,
+      "actual_DCF": 0.8418367346938775
+    },
+    "b10_eer": {
+      "threshold": 0.4293814897537231,
+      "FA": 183,
+      "MISS": 28,
+      "FAR_percent": 3.73469387755102,
+      "FRR_percent": 5.714285714285714,
+      "actual_DCF": 3.754489795918367
+    },
+    "b10_mindcf": {
+      "threshold": 0.6281929612159729,
+      "FA": 13,
+      "MISS": 282,
+      "FAR_percent": 0.2653061224489796,
+      "FRR_percent": 57.55102040816327,
+      "actual_DCF": 0.8381632653061225
+    }
+  },
+  "routing_utilization": {
+    "routed": 1689,
+    "overall_percent": 31.335807050092765,
+    "target_routed": 107,
+    "target_percent": 21.836734693877553,
+    "impostor_routed": 1582,
+    "impostor_percent": 32.285714285714285,
+    "expected_percent_at_Ptarget_0.01": 32.181224489795916
+  },
+  "eer_recovery": {
+    "b0_to_b6_gain_pp": 2.0102040816326543,
+    "b0_to_b10_gain_pp": 1.9489795918367365,
+    "recovery_percent": 96.95431472081222
+  },
+  "metric_protocol": {
+    "P_target": 0.01,
+    "C_miss": 1.0,
+    "C_fa": 1.0
+  },
+  "outputs": {
+    "trial_level_scores": "package/results\\reviewer_audit\\r19e_usc_test_final\\usc_test_final_frozen_scores.csv",
+    "trial_level_scores_sha256": "f3338a98385e0e61fc4d51e4d21177bb5fd0531a015eacb039c5dfd53d6d7df0"
+  },
+  "firewall": "All routing parameters were frozen before USC TEST. All domain-specific decision thresholds were estimated on USC CAL and frozen in R19-D before this TEST evaluation. No TEST metric was used for parameter selection or retuning."
+}

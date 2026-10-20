@@ -681,7 +681,7 @@ def build_cache(
     )
 
     print(
-        f"Persistent cache saved:\n"
+        f"Persistent cache saveexternal/n"
         f"  {CFG.disk_cache_path}"
     )
 
@@ -1543,7 +1543,7 @@ def main():
     print("R14-C THREE RUNS COMPLETE")
     print("=" * 72)
     print(
-        f"Summary CSV:\n  "
+        f"Summary CSexternal/n  "
         f"{summary_csv}"
     )
     print(

@@ -2,9 +2,9 @@
   "stage": "R21",
   "status": "PASS",
   "raw_artifacts": {
-    "r9_csv": "/home/azsa/REDIMNET_SV_MASTER/results/reviewer_audit/r9_at085_energy_benchmark/r9_at085_energy_summary.csv",
+    "r9_csv": "external/r9_at085_energy_summary.csv",
     "r9_sha256": "c0f4e3323599425b5c4237d597c24e4f06a0b51e68ed20cbf496ab3adbe16e38",
-    "r14c_csv": "/home/azsa/REDIMNET_SV_MASTER/results/reviewer_audit/r14c_pi5_b2_at085_energy/r14c_b2_energy_summary.csv",
+    "r14c_csv": "external/r14c_b2_energy_summary.csv",
     "r14c_sha256": "9e671652e475982339a87775e5dd62b3214dd9443179d89562f01fb6376c0ece"
   },
   "invalid_measurements": [

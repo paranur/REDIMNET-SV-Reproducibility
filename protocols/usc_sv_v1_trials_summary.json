@@ -8,7 +8,7 @@
   "splits": {
     "cal": {
       "n_speakers": 40,
-      "source_manifest": "D:\\PYTHON\\KAA_SSL_SV\\PROTOCOLS\\USC_SV_v1\\usc_sv_v1_cal.csv",
+      "source_manifest": "external/usc_sv_v1_cal.csv",
       "source_manifest_sha256": "62313e0c1950fe41dd7a8aa2ee8b2baae2862df787a4d0c92f214018362fdff2",
       "protocols": {
         "1E": {
@@ -38,7 +38,7 @@
     },
     "dev": {
       "n_speakers": 40,
-      "source_manifest": "D:\\PYTHON\\KAA_SSL_SV\\PROTOCOLS\\USC_SV_v1\\usc_sv_v1_dev.csv",
+      "source_manifest": "external/usc_sv_v1_dev.csv",
       "source_manifest_sha256": "17ca66964c640ba2f6ad8d3b314ea01a5774788632533a6c0b63a63b01a6f118",
       "protocols": {
         "1E": {
@@ -68,7 +68,7 @@
     },
     "test": {
       "n_speakers": 49,
-      "source_manifest": "D:\\PYTHON\\KAA_SSL_SV\\PROTOCOLS\\USC_SV_v1\\usc_sv_v1_test.csv",
+      "source_manifest": "external/usc_sv_v1_test.csv",
       "source_manifest_sha256": "54d15f97d4e4c466798f5bca401b1b39c4eed267b1bbed471b65325d7ba7afc6",
       "protocols": {
         "1E": {

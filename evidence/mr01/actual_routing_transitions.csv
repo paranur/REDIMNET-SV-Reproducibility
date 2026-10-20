@@ -1,0 +1,4 @@
+group,n_trials,routed_trials,routed_utilization,actual_corrections,actual_harms,net_corrected,nonrouted_corrections,nonrouted_harms
+all,37720,3641,0.0965270413573701,378,102,276,0,0
+target,18860,1262,0.06691410392364794,126,9,117,0,0
+impostor,18860,2379,0.12613997879109226,252,93,159,0,0

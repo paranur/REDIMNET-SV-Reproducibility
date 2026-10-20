@@ -1,0 +1,54 @@
+{
+  "stage": "R13",
+  "method": "speaker-resampling sensitivity analysis with unit-weight retained trials; no m_i*m_j weighting",
+  "n_bootstrap": 2000,
+  "seed": 20260921,
+  "valid_replicates": 2000,
+  "skipped_replicates": 0,
+  "delta_eer_ci_contains_zero": true,
+  "delta_mindcf_ci_contains_zero": false,
+  "summary": [
+    {
+      "metric": "b6_eer_pct",
+      "mean": 0.7145418178008102,
+      "sd": 0.133917188665756,
+      "ci95_low": 0.4661165375157884,
+      "ci95_high": 0.9377922721076093
+    },
+    {
+      "metric": "b10_eer_pct",
+      "mean": 0.7509304459294458,
+      "sd": 0.12730308013514074,
+      "ci95_low": 0.5180321691984865,
+      "ci95_high": 0.9746537311768338
+    },
+    {
+      "metric": "delta_eer_pp_b10_minus_b6",
+      "mean": 0.03638862812863559,
+      "sd": 0.022749729325106365,
+      "ci95_low": -0.007156776319037475,
+      "ci95_high": 0.08418826730481092
+    },
+    {
+      "metric": "b6_mindcf",
+      "mean": 0.05247854182519195,
+      "sd": 0.00846162669291023,
+      "ci95_low": 0.03379044339700855,
+      "ci95_high": 0.06705288021745878
+    },
+    {
+      "metric": "b10_mindcf",
+      "mean": 0.13336189770744955,
+      "sd": 0.014776497787558096,
+      "ci95_low": 0.09750472864501561,
+      "ci95_high": 0.15796200357066265
+    },
+    {
+      "metric": "delta_mindcf_b10_minus_b6",
+      "mean": 0.08088335588225759,
+      "sd": 0.008167816124928973,
+      "ci95_low": 0.06080859503290842,
+      "ci95_high": 0.09520770725092614
+    }
+  ]
+}

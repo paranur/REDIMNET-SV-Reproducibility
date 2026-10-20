@@ -1,0 +1,85 @@
+{
+  "stage": "R5-A",
+  "status": "COMPLETE_NOT_YET_LOCKED",
+  "input": {
+    "score_csv": "package/results\\stage01_clean_vox1o\\scores\\vox1o_b0_b6_scores.csv",
+    "sha256": "f71d954a7e237f8d43140f03df132d88cabb9e6cbdf5659fd92c94055d38ee4c",
+    "trials": 37720,
+    "target": 18860,
+    "impostor": 18860,
+    "speakers": 40
+  },
+  "frozen_b10": {
+    "tau_b0": 0.336179674,
+    "delta_b10": 0.134631842,
+    "usage_pct": 9.65270413573701
+  },
+  "canonical": {
+    "b6": {
+      "eer_pct": 0.7158006362672318,
+      "eer_threshold": 0.38167354,
+      "mindcf": 0.05434782608695651,
+      "mindcf_threshold": 0.48561567,
+      "auc": 0.9992403955472539
+    },
+    "b10": {
+      "eer_pct": 0.7237539766702037,
+      "eer_threshold": 0.38398933,
+      "mindcf": 0.13520678685047716,
+      "mindcf_threshold": 0.52358317,
+      "auc": 0.9990073210653033
+    }
+  },
+  "bootstrap": {
+    "method": "paired speaker-cluster bootstrap with dyadic endpoint multiplicity weighting",
+    "n_requested": 2000,
+    "n_valid": 2000,
+    "n_skipped": 0,
+    "seed": 20260921,
+    "speaker_count": 40,
+    "trial_weight": "m_enroll * m_test"
+  },
+  "ci95": {
+    "b6_eer_pct": {
+      "bootstrap_mean": 0.7154396723642062,
+      "bootstrap_sd": 0.30627330798464175,
+      "ci95_low": 0.3235007461638175,
+      "ci95_high": 1.462238820276105
+    },
+    "b10_eer_pct": {
+      "bootstrap_mean": 0.7600461155994143,
+      "bootstrap_sd": 0.3089498261006658,
+      "ci95_low": 0.3535707437296938,
+      "ci95_high": 1.4925967790914367
+    },
+    "delta_eer_pp_b10_minus_b6": {
+      "bootstrap_mean": 0.04460644323520819,
+      "bootstrap_sd": 0.04802169164162645,
+      "ci95_low": -0.0173127881519368,
+      "ci95_high": 0.16267641880181424
+    },
+    "b6_mindcf": {
+      "bootstrap_mean": 0.04321154528493814,
+      "bootstrap_sd": 0.016128555914529615,
+      "ci95_low": 0.016449792350152398,
+      "ci95_high": 0.0782785668199342
+    },
+    "b10_mindcf": {
+      "bootstrap_mean": 0.11139619968894048,
+      "bootstrap_sd": 0.04060254741625249,
+      "ci95_low": 0.04431208195938275,
+      "ci95_high": 0.19891251899593443
+    },
+    "delta_mindcf_b10_minus_b6": {
+      "bootstrap_mean": 0.06818465440400233,
+      "bootstrap_sd": 0.029885669647782564,
+      "ci95_low": 0.010464640187369503,
+      "ci95_high": 0.1260238222223196
+    }
+  },
+  "zero_crossing": {
+    "delta_eer": true,
+    "delta_mindcf": false
+  },
+  "guardrail": "CI overlap or a paired-difference CI containing zero must not be interpreted as equivalence. R5-A performs uncertainty estimation, not an equivalence/non-inferiority test."
+}

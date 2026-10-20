@@ -1,0 +1,20 @@
+{
+  "seed": 20261020,
+  "replicates": 2000,
+  "speakers": 40,
+  "rng": "NumPy PCG64",
+  "target_weight": "M_s",
+  "impostor_weight": "M_s*M_t for distinct speakers",
+  "paired_systems": [
+    "b0",
+    "b6",
+    "B10"
+  ],
+  "P_target": 0.01,
+  "C_miss": 1,
+  "C_fa": 1,
+  "CI": "linear percentile quantiles .025 and .975",
+  "EER": "first canonical ROC point minimizing abs(FNR-FPR), no interpolation",
+  "roc_drop_intermediate": true,
+  "design": "evidence/mr02/bootstrap_design.md"
+}

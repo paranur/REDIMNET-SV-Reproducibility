@@ -1,0 +1,108 @@
+{
+  "experiment": "R26 USC-SV speaker-aware paired bootstrap",
+  "status": "COMPLETE_PENDING_SCIENTIFIC_LOCK",
+  "input": "package/results\\reviewer_audit\\r19e_usc_test_final\\usc_test_final_frozen_scores.csv",
+  "protocol": {
+    "trials": 5390,
+    "targets": 490,
+    "impostors": 4900,
+    "test_speakers": 49
+  },
+  "bootstrap": {
+    "unit": "speaker",
+    "paired_across_systems": true,
+    "speaker_multiplicity_retained": true,
+    "trial_rule": "all trials touching each sampled speaker",
+    "n_bootstrap": 2000,
+    "seed": 20261007,
+    "ci": "percentile 95%"
+  },
+  "original_test_metrics": {
+    "b0": {
+      "eer_percent": 6.69387755102041,
+      "minDCF": 0.7771428571428571
+    },
+    "b6": {
+      "eer_percent": 4.6938775510204085,
+      "minDCF": 0.8230612244897959
+    },
+    "B10": {
+      "eer_percent": 4.744897959183674,
+      "minDCF": 0.8177551020408163
+    }
+  },
+  "uncertainty": {
+    "eer_b0": {
+      "mean": 6.771108340989484,
+      "median": 6.731704868561417,
+      "ci95_low": 4.698373841716176,
+      "ci95_high": 9.186857484525154
+    },
+    "eer_b6": {
+      "mean": 4.724521999494031,
+      "median": 4.671087708896853,
+      "ci95_low": 3.066424565407536,
+      "ci95_high": 7.03376326514618
+    },
+    "eer_B10": {
+      "mean": 4.80282238341925,
+      "median": 4.69475160555214,
+      "ci95_low": 3.1410631834392952,
+      "ci95_high": 7.1484098720279174
+    },
+    "delta_eer_B10_minus_b0": {
+      "mean": -1.9682859575702327,
+      "median": -2.0161822872519415,
+      "ci95_low": -3.2047989866181767,
+      "ci95_high": -0.6517301741039716
+    },
+    "delta_eer_B10_minus_b6": {
+      "mean": 0.07830038392522023,
+      "median": 0.02540263177821389,
+      "ci95_low": -0.015367987711393805,
+      "ci95_high": 0.4170168699577038
+    },
+    "delta_eer_b6_minus_b0": {
+      "mean": -2.046586341495453,
+      "median": -2.0485543816427696,
+      "ci95_low": -3.2596625147561946,
+      "ci95_high": -0.7915140805147497
+    },
+    "minDCF_b0": {
+      "mean": 0.7407962414729893,
+      "median": 0.7549088684827525,
+      "ci95_low": 0.5370843452375766,
+      "ci95_high": 0.8838566741480842
+    },
+    "minDCF_b6": {
+      "mean": 0.77686918465936,
+      "median": 0.7994003971203567,
+      "ci95_low": 0.5154149312688048,
+      "ci95_high": 0.9306288295398166
+    },
+    "minDCF_B10": {
+      "mean": 0.7703303891362675,
+      "median": 0.7872767028247505,
+      "ci95_low": 0.5867584107182247,
+      "ci95_high": 0.8926883552814758
+    },
+    "delta_minDCF_B10_minus_b0": {
+      "mean": 0.02953414766327814,
+      "median": 0.028901007492490194,
+      "ci95_low": 0.0,
+      "ci95_high": 0.08667391100270522
+    },
+    "delta_minDCF_B10_minus_b6": {
+      "mean": -0.00653879552309248,
+      "median": -0.012090831703452709,
+      "ci95_low": -0.07620762025144073,
+      "ci95_high": 0.09845692848833157
+    },
+    "delta_minDCF_b6_minus_b0": {
+      "mean": 0.036072943186370623,
+      "median": 0.03922563432070386,
+      "ci95_low": -0.03898831994445422,
+      "ci95_high": 0.08788359454210146
+    }
+  }
+}

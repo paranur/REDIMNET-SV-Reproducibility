@@ -1,0 +1,107 @@
+{
+  "stage": "R19-D",
+  "status": "PASS",
+  "input": {
+    "cal_scores": "package/results\\reviewer_audit\\r19c_usc_sv_score_generation\\scores\\usc_sv_cal_1e_b0_b6_scores.csv",
+    "sha256": "ed0df13a0d5c9f5112fd45b13a542765cb7482b1ae54f9c5824233cacf036c92",
+    "trials": 4400,
+    "target": 400,
+    "impostor": 4000,
+    "test_loaded": false
+  },
+  "routing_policy": {
+    "source": "VoxCeleb DEV/CAL frozen PTN B10",
+    "tau_b0": 0.336179673672,
+    "delta_B10": 0.134631842,
+    "retuned_on_usc": false,
+    "routed": 1594,
+    "usage_percent": 36.22727272727273,
+    "target_usage_percent": 21.5,
+    "impostor_usage_percent": 37.7
+  },
+  "cal_threshold_swept": {
+    "b0": {
+      "eer_percent": 7.2375,
+      "eer_threshold": 0.3742733597755432,
+      "minDCF": 0.59275,
+      "minDCF_threshold": 0.5554097890853882,
+      "roc_auc": 0.9840368750000001
+    },
+    "b6": {
+      "eer_percent": 5.462500000000002,
+      "eer_threshold": 0.4293814897537231,
+      "minDCF": 0.57225,
+      "minDCF_threshold": 0.6678771376609802,
+      "roc_auc": 0.984158125
+    },
+    "frozen_b10": {
+      "eer_percent": 5.424999999999999,
+      "eer_threshold": 0.4293814897537231,
+      "minDCF": 0.66375,
+      "minDCF_threshold": 0.6281929612159729,
+      "roc_auc": 0.9846418749999999
+    }
+  },
+  "usc_cal_frozen_decision_thresholds": {
+    "b0_eer": 0.3742733597755432,
+    "b0_mindcf": 0.5554097890853882,
+    "b6_eer": 0.4293814897537231,
+    "b6_mindcf": 0.6678771376609802,
+    "b10_eer": 0.4293814897537231,
+    "b10_mindcf": 0.6281929612159729
+  },
+  "cal_fixed_threshold_sanity": {
+    "b0_eer": {
+      "FA": 289,
+      "MISS": 29,
+      "FAR_percent": 7.225,
+      "FRR_percent": 7.249999999999999,
+      "actual_DCF": 7.22525
+    },
+    "b0_mindcf": {
+      "FA": 9,
+      "MISS": 148,
+      "FAR_percent": 0.22499999999999998,
+      "FRR_percent": 37.0,
+      "actual_DCF": 0.59275
+    },
+    "b6_eer": {
+      "FA": 217,
+      "MISS": 22,
+      "FAR_percent": 5.425,
+      "FRR_percent": 5.5,
+      "actual_DCF": 5.42575
+    },
+    "b6_mindcf": {
+      "FA": 1,
+      "MISS": 219,
+      "FAR_percent": 0.025,
+      "FRR_percent": 54.75,
+      "actual_DCF": 0.57225
+    },
+    "b10_eer": {
+      "FA": 224,
+      "MISS": 21,
+      "FAR_percent": 5.6000000000000005,
+      "FRR_percent": 5.25,
+      "actual_DCF": 5.5965
+    },
+    "b10_mindcf": {
+      "FA": 5,
+      "MISS": 216,
+      "FAR_percent": 0.125,
+      "FRR_percent": 54.0,
+      "actual_DCF": 0.66375
+    }
+  },
+  "protocol": {
+    "P_target": 0.01,
+    "C_miss": 1.0,
+    "C_fa": 1.0
+  },
+  "outputs": {
+    "cal_mixed_scores": "package/results\\reviewer_audit\\r19d_usc_cal_freeze\\usc_cal_frozen_b10_scores.csv",
+    "cal_mixed_scores_sha256": "92fb47e81eb17aaeebda0607d303edcdc2faefe0347a62bbe658b0e51cd3f2e6"
+  },
+  "firewall": "USC TEST scores were not loaded. The routing policy remained the original VoxCeleb-developed Frozen-B10 policy. USC CAL was used only to estimate domain-specific decision thresholds for the already frozen b0, b6, and B10 scoring systems."
+}

@@ -1,0 +1,7 @@
+regime,identifier,sha256,bytes,upstream,included
+PTN,b0-vox2-ptn.pt,7747c59fb22bc0e91f65a29465325fc26bfe889352d795c8099571d479e31b8e,4284704,https://github.com/IDRnD/ReDimNet,no; identifiers and hashes only
+PTN,b2-vox2-ptn.pt,c18a42926878bc8ac079623fbf36f0bc8054cda1199e96fbe1a3f8e131796647,20581530,https://github.com/IDRnD/ReDimNet,no; identifiers and hashes only
+PTN,b6-vox2-ptn.pt,b306026f7f469327d7a316105ab21d8d6ac3135d7eae1f5dd45c8ad656d251b2,60661102,https://github.com/IDRnD/ReDimNet,no; identifiers and hashes only
+FT-LM,b0-vox2-ft_lm-state_dict.pt,f728d5902156a15d8366c7daa5d194800effa10a692f34f7d34a5336ce8228e5,4324742,https://github.com/IDRnD/ReDimNet,no; identifiers and hashes only
+FT-LM,b2-vox2-ft_lm-state_dict.pt,230358824cb52215fd6d9d1b6ae87757c1ab65292c7d4c9c5ae89115dbe085e3,20613241,https://github.com/IDRnD/ReDimNet,no; identifiers and hashes only
+FT-LM,b6-vox2-ft_lm-state_dict.pt,a08727cbb13ac74c72eab697bc7cce6adc34f06bdce9d2af3c0afe3ade89b351,60717437,https://github.com/IDRnD/ReDimNet,no; identifiers and hashes only

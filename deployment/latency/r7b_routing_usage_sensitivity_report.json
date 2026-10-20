@@ -11,7 +11,7 @@
     "torch_interop_threads": 1
   },
   "manifest": {
-    "path": "/home/azsa/REDIMNET_SV_MASTER/results/pi5_input/stage09c_pi5_trial_manifest.csv",
+    "path": "external/stage09c_pi5_trial_manifest.csv",
     "sha256": "d4e26be792f1ebcb2bf83719d1ee303399cde0dbb299248b6258b4ad436aa2c0",
     "trials": 500
   },

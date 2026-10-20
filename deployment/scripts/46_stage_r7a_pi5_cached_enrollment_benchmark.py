@@ -378,7 +378,7 @@ def resolve_audio_path(raw: str) -> Path:
         return q
 
     raise FileNotFoundError(
-        f"Audio file not found under canonical VoxCeleb1-O root:\n{q}"
+        f"Audio file not found under canonical VoxCeleb1-O rooexternal/n{q}"
     )
 
 
@@ -462,12 +462,12 @@ def read_manifest(path: Path) -> List[dict]:
 
             if not enroll_path.exists():
                 raise FileNotFoundError(
-                    f"Enrollment audio missing:\n{enroll_path}"
+                    f"Enrollment audio missinexternal/n{enroll_path}"
                 )
 
             if not test_path.exists():
                 raise FileNotFoundError(
-                    f"Test audio missing:\n{test_path}"
+                    f"Test audio missinexternal/n{test_path}"
                 )
 
             rows.append(

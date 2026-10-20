@@ -1,0 +1,136 @@
+{
+  "experiment": "R15 — Held-out frozen-decision expert-benefit validation",
+  "status": "COMPLETED",
+  "protocol": {
+    "dataset": "VoxCeleb1-O",
+    "n_trials": 37720,
+    "n_target": 18860,
+    "n_impostor": 18860,
+    "n_speakers": 40,
+    "evaluation_only": true
+  },
+  "frozen_parameters": {
+    "tau_b0": 0.336179673672,
+    "tau_b6": 0.3403647542,
+    "tau_b10_mixed": 0.33803793788,
+    "delta_b10": 0.134631842
+  },
+  "integrity": {
+    "protocol_trial_count_match": true,
+    "protocol_label_order_match": true,
+    "margin_reconstruction_max_abs_error": 2.777222896099829e-13,
+    "route_reconstruction_match": true
+  },
+  "point_estimates": {
+    "n_trials": 37720,
+    "n_target": 18860,
+    "n_impostor": 18860,
+    "routed_n": 3641,
+    "routed_pct": 9.65270413573701,
+    "CC": 36935,
+    "CW": 102,
+    "WC": 378,
+    "WW": 305,
+    "benefit_n": 378,
+    "benefit_pct": 1.002120890774125,
+    "harm_n": 102,
+    "harm_pct": 0.2704135737009544,
+    "net_corrected_decisions": 276,
+    "net_corrected_pct": 0.7317073170731707,
+    "benefit_FA_corrected": 252,
+    "benefit_MISS_corrected": 126,
+    "harm_FA_created": 93,
+    "harm_MISS_created": 9,
+    "benefit_roc_auc": 0.9837488122796891,
+    "benefit_pr_auc": 0.3020237706414463,
+    "benefit_routed_n": 378,
+    "benefit_capture": 1.0,
+    "benefit_capture_pct": 100.0,
+    "harm_routed_n": 102,
+    "harm_capture": 1.0,
+    "harm_capture_pct": 100.0,
+    "benefit_precision": 0.10381763251853886,
+    "benefit_precision_pct": 10.381763251853886,
+    "b0_accuracy_pct": 98.18928950159066,
+    "mixed_accuracy_pct": 98.92099681866384
+  },
+  "bootstrap": {
+    "method": "Speaker resampling with replacement; trials touching at least one sampled speaker retained once with unit weight.",
+    "n_replicates": 2000,
+    "seed": 20260921,
+    "summary": [
+      {
+        "metric": "routed_pct",
+        "bootstrap_mean": 10.130425214843225,
+        "bootstrap_std": 0.454162118525039,
+        "ci95_low": 9.270660128570153,
+        "ci95_high": 11.015134967625215,
+        "n_valid": 2000
+      },
+      {
+        "metric": "benefit_n",
+        "bootstrap_mean": 300.3225,
+        "bootstrap_std": 24.80480060021463,
+        "ci95_low": 245.0,
+        "ci95_high": 343.0,
+        "n_valid": 2000
+      },
+      {
+        "metric": "harm_n",
+        "bootstrap_mean": 86.8955,
+        "bootstrap_std": 8.613052425594717,
+        "ci95_low": 66.0,
+        "ci95_high": 99.0,
+        "n_valid": 2000
+      },
+      {
+        "metric": "net_corrected_decisions",
+        "bootstrap_mean": 213.427,
+        "bootstrap_std": 20.514728807591496,
+        "ci95_low": 170.975,
+        "ci95_high": 251.0,
+        "n_valid": 2000
+      },
+      {
+        "metric": "benefit_roc_auc",
+        "bootstrap_mean": 0.9828136929922825,
+        "bootstrap_std": 0.0010590938426945213,
+        "ci95_low": 0.9807883860691271,
+        "ci95_high": 0.9849862951244324,
+        "n_valid": 2000
+      },
+      {
+        "metric": "benefit_pr_auc",
+        "bootstrap_mean": 0.30337572661479145,
+        "bootstrap_std": 0.01106437460819334,
+        "ci95_low": 0.2810671428438271,
+        "ci95_high": 0.3254510920432501,
+        "n_valid": 2000
+      },
+      {
+        "metric": "benefit_capture_pct",
+        "bootstrap_mean": 100.0,
+        "bootstrap_std": 0.0,
+        "ci95_low": 100.0,
+        "ci95_high": 100.0,
+        "n_valid": 2000
+      },
+      {
+        "metric": "harm_capture_pct",
+        "bootstrap_mean": 100.0,
+        "bootstrap_std": 0.0,
+        "ci95_low": 100.0,
+        "ci95_high": 100.0,
+        "n_valid": 2000
+      },
+      {
+        "metric": "benefit_precision_pct",
+        "bootstrap_mean": 10.428450497394865,
+        "bootstrap_std": 0.47993157262438196,
+        "ci95_low": 9.466291705090665,
+        "ci95_high": 11.343402262892873,
+        "n_valid": 2000
+      }
+    ]
+  }
+}

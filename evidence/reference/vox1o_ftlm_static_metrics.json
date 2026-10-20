@@ -1,0 +1,59 @@
+{
+  "stage": "R10-6C",
+  "protocol": "VoxCeleb1-O veri_test.txt",
+  "trials": 37720,
+  "target_trials": 18860,
+  "impostor_trials": 18860,
+  "score": "cosine similarity",
+  "training_stage": "official ReDimNet vox2 ft_lm",
+  "dcf": {
+    "Ptarget": 0.01,
+    "Cmiss": 1.0,
+    "Cfa": 1.0,
+    "normalization": "min(Cmiss*Ptarget, Cfa*(1-Ptarget))"
+  },
+  "results": [
+    {
+      "model": "ReDimNet-b0",
+      "train_stage": "vox2-ft_lm",
+      "trials": 37720,
+      "target_trials": 18860,
+      "impostor_trials": 18860,
+      "EER_percent": 1.3335100742311796,
+      "EER_threshold": 0.3158746362,
+      "minDCF": 0.10371155885471903,
+      "minDCF_threshold": 0.4461365342,
+      "ROC_AUC": 0.9985191493046379,
+      "FPR_at_EER_percent": 1.3361611876988335,
+      "FNR_at_EER_percent": 1.3308589607635257
+    },
+    {
+      "model": "ReDimNet-b2",
+      "train_stage": "vox2-ft_lm",
+      "trials": 37720,
+      "target_trials": 18860,
+      "impostor_trials": 18860,
+      "EER_percent": 0.6336161187698853,
+      "EER_threshold": 0.3265649974,
+      "minDCF": 0.07651113467656416,
+      "minDCF_threshold": 0.4747512639,
+      "ROC_AUC": 0.9991450341805276,
+      "FPR_at_EER_percent": 0.6362672322375398,
+      "FNR_at_EER_percent": 0.6309650053022309
+    },
+    {
+      "model": "ReDimNet-b6",
+      "train_stage": "vox2-ft_lm",
+      "trials": 37720,
+      "target_trials": 18860,
+      "impostor_trials": 18860,
+      "EER_percent": 0.5275715800636294,
+      "EER_threshold": 0.3410037458,
+      "minDCF": 0.03552492046659598,
+      "minDCF_threshold": 0.4341560006,
+      "ROC_AUC": 0.9992689055596352,
+      "FPR_at_EER_percent": 0.5196182396606575,
+      "FNR_at_EER_percent": 0.5355249204666013
+    }
+  ]
+}

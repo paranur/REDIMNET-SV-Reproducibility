@@ -1,0 +1,72 @@
+{
+  "stage": "04A",
+  "dataset": "VoxCeleb1-O",
+  "trials": 37720,
+  "protocol": "untouched final test; no test ranking or retuning",
+  "frozen_CAL_tau_b0": 0.3361796736717224,
+  "static_b0": {
+    "EER_percent": 1.5402969247083758,
+    "EER_threshold": 0.36575648,
+    "minDCF": 0.16399787910922592,
+    "minDCF_threshold": 0.52358317,
+    "AUC": 0.9983524398115713
+  },
+  "static_b6": {
+    "EER_percent": 0.7158006362672318,
+    "EER_threshold": 0.38167354,
+    "minDCF": 0.05434782608695651,
+    "minDCF_threshold": 0.48561567,
+    "AUC": 0.9992403955472539
+  },
+  "policies": [
+    {
+      "policy_name": "MARGIN_B5",
+      "frozen_delta": 0.0841239094734191,
+      "observed_b6_usage_percent": 5.02916224814422,
+      "observed_b6_routed_trials": 1897,
+      "EER_percent": 0.8112407211028648,
+      "EER_threshold": 0.4001739,
+      "minDCF": 0.15636267232237544,
+      "minDCF_threshold": 0.52358317,
+      "AUC": 0.9988029857216593,
+      "test_EER_gap_recovery_percent": 88.4244372990351
+    },
+    {
+      "policy_name": "MARGIN_B10",
+      "frozen_delta": 0.1346318423748015,
+      "observed_b6_usage_percent": 9.65270413573701,
+      "observed_b6_routed_trials": 3641,
+      "EER_percent": 0.7237539766702037,
+      "EER_threshold": 0.38398933,
+      "minDCF": 0.13520678685047716,
+      "minDCF_threshold": 0.52358317,
+      "AUC": 0.9990073210653033,
+      "test_EER_gap_recovery_percent": 99.03536977491929
+    },
+    {
+      "policy_name": "MARGIN_B20",
+      "frozen_delta": 0.1963726282119751,
+      "observed_b6_usage_percent": 19.080063626723224,
+      "observed_b6_routed_trials": 7197,
+      "EER_percent": 0.7211028632025427,
+      "EER_threshold": 0.38167354,
+      "minDCF": 0.07057264050901377,
+      "minDCF_threshold": 0.51989281,
+      "AUC": 0.9991747165304656,
+      "test_EER_gap_recovery_percent": 99.35691318327999
+    },
+    {
+      "policy_name": "MARGIN_B30",
+      "frozen_delta": 0.2367909550666809,
+      "observed_b6_usage_percent": 28.730116648992578,
+      "observed_b6_routed_trials": 10837,
+      "EER_percent": 0.7184517497348872,
+      "EER_threshold": 0.38167354,
+      "minDCF": 0.054029692470837734,
+      "minDCF_threshold": 0.48561567,
+      "AUC": 0.9992029341612979,
+      "test_EER_gap_recovery_percent": 99.67845659163999
+    }
+  ],
+  "critical_rule": "Each test trial is independently routed using the DEV-frozen absolute-margin cutoff. Observed b6 usage is not forced."
+}

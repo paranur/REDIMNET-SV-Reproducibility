@@ -1,0 +1,10 @@
+{
+  "routing_policy": "Original-Frozen-B10",
+  "routing_tau_b0": 0.336179674,
+  "routing_delta_b10": 0.134631842,
+  "final_decision_thresholds_from_CAL": {
+    "EER_oriented": 0.3380379378795624,
+    "minDCF_oriented": 0.4913638830184936
+  },
+  "important": "Routing thresholds and final decision thresholds are distinct."
+}

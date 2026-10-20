@@ -9,7 +9,7 @@
   "torch": "2.13.0+cu130",
   "machine": "aarch64",
   "platform": "Linux-6.18.34+rpt-rpi-2712-aarch64-with-glibc2.41",
-  "manifest": "/home/azsa/REDIMNET_SV_MASTER/results/pi5_input/stage09c_pi5_trial_manifest.csv",
+  "manifest": "external/stage09c_pi5_trial_manifest.csv",
   "manifest_sha256": "d4e26be792f1ebcb2bf83719d1ee303399cde0dbb299248b6258b4ad436aa2c0",
   "trials": 500,
   "target": 250,
